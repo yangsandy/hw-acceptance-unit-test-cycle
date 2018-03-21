@@ -1,0 +1,19 @@
+-# in app/views/movies/show.html.haml
+
+%h2 Find Movies with the same Director!
+
+%table#movies
+  %thead
+    %tr
+      %th Movie Title
+      %th Rating
+      %th Release Date
+      %th Director
+  %tbody
+    - @movies.each do |movie|
+      %tr
+        %td= movie.title 
+        %td= movie.rating
+        %td= movie.release_date
+        %td= movie.director
+
