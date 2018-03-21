@@ -19,6 +19,10 @@ module NavigationHelpers
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #
+    
+    when /^the create movie page$/i
+      'movies/new'
+      
     when /^(.*)'s profile page$/i
       user_profile_path(User.find_by_login($1))
     
